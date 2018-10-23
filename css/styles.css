@@ -12,6 +12,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*  NAVIGATION  */
 
 header {
@@ -21,7 +26,7 @@ header {
 }
 
 .content {
-    width: 940px;
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -83,7 +88,7 @@ nav li:hover ul {
 }
 
 .mainSecImg img {
-    max-width: 100%;
+    width: 100%;
     position: relative;
 }
 
@@ -92,8 +97,8 @@ nav li:hover ul {
     background-repeat: no-repeat;
     background-position-y: -127px;
     position: absolute;
-    top: 465px;
-    right: 360px;
+    top: 524px;
+    right: 325px;
     height:152px;
     width: 157px;
     color: white;
@@ -104,6 +109,38 @@ nav li:hover ul {
     text-align: center;
     padding: 40px 0px;
 
+}
+
+.mainSecImg content {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 918px) {
+
+    .mainSecImg content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mainSecImg {
+        background: #f8f8f8;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .mainSecImg img {
+        width: 100%;
+    }
+
+    .mainSecImg a {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        top: auto;
+        right: auto;
+    }
 }
 
 .new-product {
